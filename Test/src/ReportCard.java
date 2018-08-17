@@ -9,23 +9,23 @@ public class ReportCard {
 		rc.i = convertGrade (rc.i);
 	}
 	/** 
-	 Ìåòîä ConvertGrades ïğèíèìàåò îäèí öåëüíî÷èñåëüííûé àãğóìåíò
-	 - ğåçóëüòàò òåñòà è ğåçóëüòàò òåñòà è âîçâğàùàåò ñèìâîë A, B, C or D â
-	 çàâèñèìîñòè îò ıòîãî àğãóìåíòà.
+	 ÃŒÃ¥Ã²Ã®Ã¤ ConvertGrades Ã¯Ã°Ã¨Ã­Ã¨Ã¬Ã Ã¥Ã² Ã®Ã¤Ã¨Ã­ Ã¶Ã¥Ã«Ã¼Ã­Ã®Ã·Ã¨Ã±Ã¥Ã«Ã¼Ã­Ã­Ã»Ã© Ã Ã£Ã°Ã³Ã¬Ã¥Ã­Ã²
+	 - Ã°Ã¥Ã§Ã³Ã«Ã¼Ã²Ã Ã² Ã²Ã¥Ã±Ã²Ã  Ã¨ Ã°Ã¥Ã§Ã³Ã«Ã¼Ã²Ã Ã² Ã²Ã¥Ã±Ã²Ã  Ã¨ Ã¢Ã®Ã§Ã¢Ã°Ã Ã¹Ã Ã¥Ã² Ã±Ã¨Ã¬Ã¢Ã®Ã« A, B, C or D Ã¢
+	 Ã§Ã Ã¢Ã¨Ã±Ã¨Ã¬Ã®Ã±Ã²Ã¨ Ã®Ã² Ã½Ã²Ã®Ã£Ã® Ã Ã°Ã£Ã³Ã¬Ã¥Ã­Ã²Ã .
 	 */
 public static char convertGrade (int testResults) {
 	
-	char grade; // ëîêàëüíà çì³ííà
+	char grade; // Ğ»Ğ¾ĞºĞ°Ğ»ÑŒĞ½Ğ° Ğ·Ğ¼Ñ–Ğ½Ğ½Ğ°
 	
 	if (testResults>=90) {
 	grade = 'A';
-	//System.out.println("Âàøà îö³íêà " + grade + "\n" + "×óäîâà ğîáîòà!");
+	//System.out.println("Ğ’Ğ°ÑˆĞ° Ğ¾Ñ†Ñ–Ğ½ĞºĞ° " + grade + "\n" + "Ğ§ÑƒĞ´Ğ¾Ğ²Ğ° Ğ¾Ñ†Ñ–Ğ½ĞºĞ°!");
 } else if (testResults>=80 && testResults<90) {
 	grade = 'B';
-	//System.out.println("Âàøà îö³íêà " + grade + "\n" + "Õîğîøà ğîáîòà!");
+	//System.out.println("Ğ’Ğ°ÑˆĞ° Ğ¾Ñ†Ñ–Ğ½ĞºĞ° " + grade + "\n" + "Ğ¥Ğ¾Ñ€Ğ¾ÑˆĞ° Ñ€Ğ¾Ğ±Ğ¾Ñ‚Ğ°!");
 } else if (testResults>=70 && testResults<80) {
 	grade = 'C';
-	//System.out.println("Âàøà îö³íêà " + grade + "\n" + "Ïîòğ³áíî ï³äòÿãíóòè çíàííÿ!"); 
+	//System.out.println("Ğ’Ğ°ÑˆĞ° Ğ¾Ñ†Ñ–Ğ½ĞºĞ° " + grade + "\n" + "ĞŸĞ¾Ñ‚Ñ€Ñ–Ğ±Ğ½Ğ¾ Ğ¿Ñ–Ğ´Ñ‚ÑĞ³Ğ½ÑƒÑ‚Ğ¸ Ğ·Ğ½Ğ°Ğ½Ğ½Ñ!"); 
 } else {
 	grade = '0';
 }
@@ -33,30 +33,28 @@ public static char convertGrade (int testResults) {
 	
 	switch (grade){     
 	case 'A':  {      
-	System.out.println("Âàøà îö³íêà " + grade + "\n" + "×óäîâà ğîáîòà!");        
+	System.out.println("Ğ’Ğ°ÑˆĞ° Ğ¾Ñ†Ñ–Ğ½ĞºĞ° " + grade + "\n" + "Ğ§ÑƒĞ´Ğ¾Ğ²Ğ° Ñ€Ğ¾Ğ±Ğ¾Ñ‚Ğ°!");        
 	break;     
 	}case 'B': {        
-	System.out.println("Âàøà îö³íêà " + grade + "\n" + "Õîğîøà ğàáîòà!");        
+	System.out.println("Ğ’Ğ°ÑˆĞ° Ğ¾Ñ†Ñ–Ğ½ĞºĞ° " + grade + "\n" + "Ğ¥Ğ¾Ñ€Ğ¾ÑˆĞ° Ñ€Ğ¾Ğ±Ğ¾Ñ‚Ğ°!");        
 	}break;     
 	case 'C': {       
-	System.out.println("Âàøà îö³íêà " + grade + "\n" + "Ïîòğ³áíî ï³äòÿãíóòè çíàííÿ!");        
-	break; 
+	System.out.println("Ğ’Ğ°ÑˆĞ° Ğ¾Ñ†Ñ–Ğ½ĞºĞ° " + grade + "\n" + "ĞŸĞ¾Ñ‚Ñ€Ñ–Ğ±Ğ½Ğ¾ Ğ¿Ñ–Ğ´Ñ‚ÑĞ³Ğ½ÑƒÑ‚Ğ¸ Ğ·Ğ½Ğ°Ğ½Ğ½Ñ!");        
+	}break; 
 }
-	}
 	return grade;
 }
 }
-//}
 
 //public static void main (String [] args) {
 	
 	//ReportCard2 rc = new ReportCard2 ();
 	
 		//char yourGrade = rc.convertGrade (88);
-		//System.out.println("Âàøà ïåğøà îö³íêà " + yourGrade);
+		//System.out.println("Ğ’Ğ°ÑˆĞ° Ğ¿ĞµÑ€ÑˆĞ° Ğ¾Ñ†Ñ–Ğ½ĞºĞ°" + yourGrade);
 		
 		//yourGrade = rc.convertGrade(79);
-		//System.out.println("Âàøà äğóãà îö³íêà " + yourGrade);
+		//System.out.println("Ğ’Ğ°ÑˆĞ° Ğ´Ñ€ÑƒĞ³Ğ° Ğ¾Ñ†Ñ–Ğ½ĞºĞ° " + yourGrade);
 		
 
 
