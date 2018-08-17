@@ -5,7 +5,7 @@ public class ReportCard2 {
 	int i;
 	
 	public void Scan() {
-		System.out.println("Введіть Вашу оцінку");
+		System.out.println("Р’РІРµРґС–С‚СЊ Р’Р°С€Сѓ РѕС†С–РЅРєСѓ");
 		Scanner scn = new Scanner (System.in);
 		i = scn.nextInt();
 	}
