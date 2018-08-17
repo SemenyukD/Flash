@@ -9,9 +9,9 @@ public class ReportCard {
 		rc.i = convertGrade (rc.i);
 	}
 	/** 
-	 Ìåòîä ConvertGrades ïðèíèìàåò îäèí öåëüíî÷èñåëüííûé àãðóìåíò
-	 - ðåçóëüòàò òåñòà è ðåçóëüòàò òåñòà è âîçâðàùàåò ñèìâîë A, B, C or D â
-	 çàâèñèìîñòè îò ýòîãî àðãóìåíòà.
+	 Метод ConvertGrades принимает один цельночисельнный агрумент
+	 - результат теста и результат теста и возвращает символ A, B, C or D в
+	 зависимости от этого аргумента.
 	 */
 public static char convertGrade (int testResults) {
 	
