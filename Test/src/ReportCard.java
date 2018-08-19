@@ -15,8 +15,35 @@ public class ReportCard {
 	 */
 public static char convertGrade (int testResults) {
 	
-	char grade; // локальна змінна
+	char grade = 0; // локальна змінна
 	
+	switch (grade){   
+	
+	case 0:  
+	if (testResults>=90) {
+	grade = 'A';
+	System.out.println("Ваша оцінка " + grade + "\n" + "Чудова робота!");
+	break;
+	}else if (testResults>=80 && testResults<90) {
+	grade = 'B';
+	System.out.println("Ваша оцінка " + grade + "\n" + "Хороша робота!");
+	break;
+	}else if (testResults>=70 && testResults<80) {
+	grade = 'C';
+	System.out.println("Ваша оцінка " + grade + "\n" + "Потрібно підтягнути знання!");
+	break;
+	}
+	case 1:    
+	break;     
+	}
+	return grade;
+}
+}
+	
+	
+	
+	
+/**	
 	if (testResults>=90) {
 	grade = 'A';
 	//System.out.println("Ваша оцінка " + grade + "\n" + "Чудова оцінка!");
@@ -56,7 +83,7 @@ public static char convertGrade (int testResults) {
 		//yourGrade = rc.convertGrade(79);
 		//System.out.println("Ваша друга оцінка " + yourGrade);
 		
-
+*/
 
 
 
