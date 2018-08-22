@@ -16,7 +16,7 @@ public class ReportCard {
 	 */
 	public static char convertGrade(int testResults) {
 
-		char grade = 0;// локальна змінна
+		char grade;// локальна змінна
 
 		if (testResults >= 90) {
 			grade = 'A';
