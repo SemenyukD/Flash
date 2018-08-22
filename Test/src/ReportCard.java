@@ -31,9 +31,7 @@ public class ReportCard {
 			grade = '0';
 		}
 
-		if (Character.isLetter(grade))
-			;
-		{
+		if (Character.isLetter(grade)); {
 
 			switch (grade) {
 			case 'A': {
